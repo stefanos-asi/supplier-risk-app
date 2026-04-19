@@ -1,0 +1,176 @@
+{
+  "best_model_name": "Ridge Regression",
+  "importance_label": "Normalized |coefficient|",
+  "cv_r2_mean": 0.9982,
+  "cv_r2_std": 0.0007,
+  "cv_rmse_mean": 0.0278,
+  "real_r2": 0.9819,
+  "real_rmse": 0.0792,
+  "real_mae": 0.0617,
+  "all_features": [
+    "defect_rates",
+    "supplier_lead_time",
+    "revenue_generated",
+    "shipping_costs",
+    "revenue_volatility",
+    "defect_volatility",
+    "lead_time_volatility",
+    "velocity_volatility",
+    "avg_revenue",
+    "avg_defect_rate",
+    "avg_lead_time",
+    "sku_count"
+  ],
+  "sku_features": [
+    "defect_rates",
+    "supplier_lead_time",
+    "revenue_generated",
+    "shipping_costs"
+  ],
+  "supplier_features": [
+    "revenue_volatility",
+    "defect_volatility",
+    "lead_time_volatility",
+    "velocity_volatility",
+    "avg_revenue",
+    "avg_defect_rate",
+    "avg_lead_time",
+    "sku_count"
+  ],
+  "target": "volatility_risk_score",
+  "feature_importances": {
+    "defect_rates": 8e-05,
+    "supplier_lead_time": 6e-06,
+    "revenue_generated": 0.000228,
+    "shipping_costs": 0.000794,
+    "revenue_volatility": 0.287291,
+    "defect_volatility": 0.290123,
+    "lead_time_volatility": 0.193273,
+    "velocity_volatility": 0.202095,
+    "avg_revenue": 0.006859,
+    "avg_defect_rate": 0.011662,
+    "avg_lead_time": 0.002109,
+    "sku_count": 0.005478
+  },
+  "feature_ranges": {
+    "defect_rates": {
+      "min": 0.0186,
+      "max": 4.9393,
+      "mean": 2.2772,
+      "std": 1.4614
+    },
+    "supplier_lead_time": {
+      "min": 1.0,
+      "max": 30.0,
+      "mean": 17.08,
+      "std": 8.8463
+    },
+    "revenue_generated": {
+      "min": 1061.6185,
+      "max": 9866.4655,
+      "mean": 5776.0482,
+      "std": 2732.8417
+    },
+    "shipping_costs": {
+      "min": 1.0135,
+      "max": 9.9298,
+      "mean": 5.5481,
+      "std": 2.6514
+    },
+    "revenue_volatility": {
+      "min": 2507.098,
+      "max": 3005.9351,
+      "mean": 2732.072,
+      "std": 165.3319
+    },
+    "defect_volatility": {
+      "min": 1.3771,
+      "max": 1.6356,
+      "mean": 1.4552,
+      "std": 0.0942
+    },
+    "lead_time_volatility": {
+      "min": 7.9228,
+      "max": 9.8161,
+      "mean": 8.7619,
+      "std": 0.6601
+    },
+    "velocity_volatility": {
+      "min": 451.8479,
+      "max": 1690.9508,
+      "mean": 1225.3233,
+      "std": 442.9323
+    },
+    "avg_revenue": {
+      "min": 4803.8312,
+      "max": 6519.732,
+      "mean": 5776.0482,
+      "std": 529.6879
+    },
+    "avg_defect_rate": {
+      "min": 1.8036,
+      "max": 2.6654,
+      "mean": 2.2772,
+      "std": 0.3102
+    },
+    "avg_lead_time": {
+      "min": 14.7778,
+      "max": 20.1333,
+      "mean": 17.08,
+      "std": 2.0337
+    },
+    "sku_count": {
+      "min": 15.0,
+      "max": 27.0,
+      "mean": 20.86,
+      "std": 4.3299
+    }
+  },
+  "training_rows": 900,
+  "real_rows": 100,
+  "synthetic_rows": 800,
+  "noise_factor": 0.08,
+  "model_comparison": [
+    {
+      "model": "Linear Regression",
+      "cv_r2_mean": 0.9982,
+      "cv_r2_std": 0.0007,
+      "cv_rmse_mean": 0.0277,
+      "real_r2": 0.9818,
+      "real_rmse": 0.0795,
+      "real_mae": 0.0618
+    },
+    {
+      "model": "Ridge Regression",
+      "cv_r2_mean": 0.9982,
+      "cv_r2_std": 0.0007,
+      "cv_rmse_mean": 0.0278,
+      "real_r2": 0.9819,
+      "real_rmse": 0.0792,
+      "real_mae": 0.0617
+    },
+    {
+      "model": "Random Forest",
+      "cv_r2_mean": 0.9987,
+      "cv_r2_std": 0.0002,
+      "cv_rmse_mean": 0.0243,
+      "real_r2": 0.9994,
+      "real_rmse": 0.0145,
+      "real_mae": 0.0092
+    },
+    {
+      "model": "XGBoost",
+      "cv_r2_mean": 0.9988,
+      "cv_r2_std": 0.0004,
+      "cv_rmse_mean": 0.0233,
+      "real_r2": 0.9999,
+      "real_rmse": 0.0062,
+      "real_mae": 0.0051
+    }
+  ],
+  "score_range": {
+    "min": -0.6956,
+    "max": 1.4818,
+    "mean": 0.003
+  }
+}
