@@ -1,17 +1,16 @@
 {
   "best_model_name": "Ridge Regression",
   "importance_label": "Normalized |coefficient|",
-  "cv_r2_mean": 0.9982,
-  "cv_r2_std": 0.0007,
-  "cv_rmse_mean": 0.0278,
-  "real_r2": 0.9819,
-  "real_rmse": 0.0792,
-  "real_mae": 0.0617,
+  "cv_r2_mean": 0.9981,
+  "cv_r2_std": 0.0008,
+  "cv_rmse_mean": 0.028,
+  "real_r2": 0.982,
+  "real_rmse": 0.079,
+  "real_mae": 0.0615,
   "all_features": [
     "defect_rates",
     "supplier_lead_time",
     "revenue_generated",
-    "shipping_costs",
     "revenue_volatility",
     "defect_volatility",
     "lead_time_volatility",
@@ -24,8 +23,7 @@
   "sku_features": [
     "defect_rates",
     "supplier_lead_time",
-    "revenue_generated",
-    "shipping_costs"
+    "revenue_generated"
   ],
   "supplier_features": [
     "revenue_volatility",
@@ -39,18 +37,17 @@
   ],
   "target": "volatility_risk_score",
   "feature_importances": {
-    "defect_rates": 8e-05,
-    "supplier_lead_time": 6e-06,
-    "revenue_generated": 0.000228,
-    "shipping_costs": 0.000794,
-    "revenue_volatility": 0.287291,
-    "defect_volatility": 0.290123,
-    "lead_time_volatility": 0.193273,
-    "velocity_volatility": 0.202095,
-    "avg_revenue": 0.006859,
-    "avg_defect_rate": 0.011662,
-    "avg_lead_time": 0.002109,
-    "sku_count": 0.005478
+    "defect_rates": 0.000161,
+    "supplier_lead_time": 0.000172,
+    "revenue_generated": 0.000444,
+    "revenue_volatility": 0.283904,
+    "defect_volatility": 0.289089,
+    "lead_time_volatility": 0.194827,
+    "velocity_volatility": 0.200719,
+    "avg_revenue": 0.011282,
+    "avg_defect_rate": 0.012881,
+    "avg_lead_time": 0.001285,
+    "sku_count": 0.005235
   },
   "feature_ranges": {
     "defect_rates": {
@@ -70,12 +67,6 @@
       "max": 9866.4655,
       "mean": 5776.0482,
       "std": 2732.8417
-    },
-    "shipping_costs": {
-      "min": 1.0135,
-      "max": 9.9298,
-      "mean": 5.5481,
-      "std": 2.6514
     },
     "revenue_volatility": {
       "min": 2507.098,
@@ -134,43 +125,43 @@
     {
       "model": "Linear Regression",
       "cv_r2_mean": 0.9982,
-      "cv_r2_std": 0.0007,
-      "cv_rmse_mean": 0.0277,
+      "cv_r2_std": 0.0008,
+      "cv_rmse_mean": 0.0278,
       "real_r2": 0.9818,
-      "real_rmse": 0.0795,
+      "real_rmse": 0.0794,
       "real_mae": 0.0618
     },
     {
       "model": "Ridge Regression",
-      "cv_r2_mean": 0.9982,
-      "cv_r2_std": 0.0007,
-      "cv_rmse_mean": 0.0278,
-      "real_r2": 0.9819,
-      "real_rmse": 0.0792,
-      "real_mae": 0.0617
+      "cv_r2_mean": 0.9981,
+      "cv_r2_std": 0.0008,
+      "cv_rmse_mean": 0.028,
+      "real_r2": 0.982,
+      "real_rmse": 0.079,
+      "real_mae": 0.0615
     },
     {
       "model": "Random Forest",
       "cv_r2_mean": 0.9987,
       "cv_r2_std": 0.0002,
-      "cv_rmse_mean": 0.0243,
+      "cv_rmse_mean": 0.0244,
       "real_r2": 0.9994,
-      "real_rmse": 0.0145,
-      "real_mae": 0.0092
+      "real_rmse": 0.0141,
+      "real_mae": 0.01
     },
     {
       "model": "XGBoost",
-      "cv_r2_mean": 0.9988,
-      "cv_r2_std": 0.0004,
-      "cv_rmse_mean": 0.0233,
+      "cv_r2_mean": 0.9981,
+      "cv_r2_std": 0.0008,
+      "cv_rmse_mean": 0.0286,
       "real_r2": 0.9999,
-      "real_rmse": 0.0062,
-      "real_mae": 0.0051
+      "real_rmse": 0.0057,
+      "real_mae": 0.005
     }
   ],
   "score_range": {
-    "min": -0.6956,
-    "max": 1.4818,
-    "mean": 0.003
+    "min": -0.6989,
+    "max": 1.4609,
+    "mean": 0.0084
   }
 }

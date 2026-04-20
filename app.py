@@ -51,17 +51,6 @@ div[data-testid="stMetricLabel"] { color: #94a3b8; font-size: 0.75rem; }
 </style>
 """, unsafe_allow_html=True)
 
-# temporary debug — remove after fixing
-import streamlit as st
-try:
-    url = st.secrets["SUPABASE_URL"]
-    key = st.secrets["SUPABASE_KEY"]
-    st.write(f"URL length: {len(url)}")
-    st.write(f"KEY length: {len(key)}")
-    st.write(f"KEY starts with: {key[:10]}")
-except Exception as e:
-    st.error(f"Secrets error: {e}")
-
 @st.cache_resource
 def load_artifacts():
     model  = joblib.load("supplier_risk_model.pkl")

@@ -7,7 +7,6 @@ SKU_FEATURES = [
     "defect_rates",
     "supplier_lead_time",
     "revenue_generated",
-    "shipping_costs",
 ]
 
 # Supplier-level features — these feed directly into the risk score formula
@@ -29,7 +28,6 @@ FEATURE_LABELS = {
     "defect_rates":          "Defect Rate (%)",
     "supplier_lead_time":    "Lead Time (days)",
     "revenue_generated":     "Revenue ($)",
-    "shipping_costs":        "Shipping Costs ($)",
     "revenue_volatility":    "Revenue Volatility (std)",
     "defect_volatility":     "Defect Rate Volatility (std)",
     "lead_time_volatility":  "Lead Time Volatility (std)",
